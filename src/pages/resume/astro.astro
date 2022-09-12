@@ -1,0 +1,35 @@
+---
+import ResumeBackEnd from "../../components/ResumeBackEnd.astro";
+import ResumeFrontEnd from "../../components/ResumeFrontEnd.astro";
+import Skills from "../../components/Skills.astro";
+import Layout from "../../layouts/Layout.astro";
+---
+<Layout title="Resume: Astro" />
+<container class="grid grid-cols-3 justify-items-center">
+<ResumeFrontEnd />
+  <Skills 
+  focused= "Astro"
+  projects= {[
+    {
+      name: "Astro Portfolio",
+      description: "A portfolio built on Astro, a new static site generator.",
+      updated: "9-12-2022",
+      href: "#tbd",
+    },
+    {
+      name: "Brothers Homewood Mgmt.",
+      description: "A E-Commerce site for a vermont busniess. Still in development.",
+      updated: "9-12-2022",
+      href: "https://bihonanon.github.io/brothers-homewood-management/",
+    }
+  ]}
+  />
+  <ResumeBackEnd />
+</container>
+<style>
+    img {
+        width: 90px;
+        height: 18px;
+        object-fit: cover;
+    }
+</style>

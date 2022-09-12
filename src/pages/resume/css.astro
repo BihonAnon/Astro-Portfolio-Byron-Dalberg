@@ -1,0 +1,35 @@
+---
+import ResumeBackEnd from "../../components/ResumeBackEnd.astro";
+import ResumeFrontEnd from "../../components/ResumeFrontEnd.astro";
+import Skills from "../../components/Skills.astro";
+import Layout from "../../layouts/Layout.astro";
+---
+<Layout title="Resume: CSS" />
+<container class="grid grid-cols-3 justify-items-center">
+<ResumeFrontEnd />
+  <Skills 
+  focused= "CSS"
+  projects= {[
+    {
+      name: "Simple Notes App",
+      description: "A simple note taking app with CSS styling",
+      updated: "2021-08-01",
+      href: "https://simple-notes-092831.herokuapp.com/",
+    },
+    {
+      name: "Simple Weather App",
+      description: "A simple weather search app utlizing a weather api with css styling",
+      updated: "7-8-2022",
+      href: "https://bihonanon.github.io/WeatherTravelDashboard/",
+    }
+  ]}
+  />
+  <ResumeBackEnd />
+</container>
+<style>
+    img {
+        width: 90px;
+        height: 18px;
+        object-fit: cover;
+    }
+</style>

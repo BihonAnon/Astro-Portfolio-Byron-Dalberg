@@ -1,0 +1,37 @@
+---
+import ResumeBackEnd from "../../components/ResumeBackEnd.astro";
+import ResumeFrontEnd from "../../components/ResumeFrontEnd.astro";
+import Skills from "../../components/Skills.astro";
+import Layout from "../../layouts/Layout.astro";
+---
+<Layout title="Resume: React" />
+<container class="grid grid-cols-3 justify-items-center">
+<ResumeFrontEnd />
+  <Skills 
+  focused= "React"
+  projects= {[
+    {
+      name: "React Portfolio - Old",
+      description: "A portfolio built on Astro, a new static site generator.",
+      updated: "8-24-2022",
+      href: "https://bihonanon.github.io/portfolio-byron-dalberg/",
+      github: "https://github.com/BihonAnon/portfolio-byron-dalberg"
+    },
+    {
+      name: "Surf Shop",
+      description: "A prototype E-Commerce site built with React.",
+      updated: "8-5-2022",
+      href: "https://peaceful-retreat-32314.herokuapp.com/",
+      github: "https://github.com/BihonAnon/SurfShop"
+    }
+  ]}
+  />
+  <ResumeBackEnd />
+</container>
+<style>
+    img {
+        width: 90px;
+        height: 18px;
+        object-fit: cover;
+    }
+</style>
