@@ -7,5 +7,4 @@ import tailwind from "@astrojs/tailwind";
 export default defineConfig({
   integrations: [react(), tailwind()],
   site: 'https://BihonAnon.github.io',
-  base: '/Astro-Portfolio-Byron-Dalberg',
 });
