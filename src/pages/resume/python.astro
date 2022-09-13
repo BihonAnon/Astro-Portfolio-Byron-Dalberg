@@ -1,0 +1,30 @@
+---
+import ResumeBackEnd from "../../components/ResumeBackEnd.astro";
+import ResumeFrontEnd from "../../components/ResumeFrontEnd.astro";
+import Skills from "../../components/Skills.astro";
+import Layout from "../../layouts/Layout.astro";
+---
+<Layout title="Resume: Python" />
+<container class="grid grid-cols-3 justify-items-center">
+<ResumeFrontEnd />
+  <Skills 
+  focused= "Python"
+  projects= {[
+    {
+      name: "Temp",
+      description: "lauren impsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      updated: "9-12-2022",
+      href: "#tbd",
+      github: "https://github.com/BihonAnon/Astro-Portfolio-Byron-Dalberg"
+    },
+  ]}
+  />
+  <ResumeBackEnd />
+</container>
+<style>
+    img {
+        width: 90px;
+        height: 18px;
+        object-fit: cover;
+    }
+</style>

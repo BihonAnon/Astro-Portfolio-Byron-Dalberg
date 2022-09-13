@@ -4,10 +4,82 @@ import PortfolioCard from "../components/portfolioCard.astro";
 ---
 
 <Layout title="Portfolio">
-  <PortfolioCard
-    imagesrc="https://www.fillmurray.com/640/360"
-    href="https://www.google.com"
-    title="Google"
-    body="Search engine"
+  <div class="grid grid-cols-3 gap-1 p-5">
+    <PortfolioCard
+      imagesrc="https://i.ibb.co/sjFy2T4/surfShop.png"
+      href="https://peaceful-retreat-32314.herokuapp.com/"
+      github="https://github.com/BihonAnon/SurfShop"
+      title="SurfShop"
+      body="An ecommerce plateform made for sufers, by surfers"
+    />
+    <PortfolioCard
+      title="Simple Notes"
+      body="A simple note taking app utilizing localstorage"
+      github="https://github.com/BihonAnon/SimpleNotes"
+      imagesrc="https://i.ibb.co/NSW488P/Simple-Notes.jpg"
+      href="https://simple-notes-092831.herokuapp.com/"
+    />
+    <PortfolioCard
+      title="Weather Dashboard"
+      body="A simple weather app utilizing apis"
+      github="https://github.com/BihonAnon/WeatherTravelDashboard"
+      imagesrc="https://i.ibb.co/t2hd0Bb/Weather-Dashboard.jpg"
+      href="https://bihonanon.github.io/WeatherTravelDashboard/"
+    />
+    <PortfolioCard 
+    title="day-plan"
+    body="a simple day planner"
+    github="https://github.com/BihonAnon/day-plan"
+    imagesrc="https://i.ibb.co/PspQ9Rb/Screenshot-2022-09-12-205439.jpg"
+    href="https://bihonanon.github.io/day-plan/"
+    />
+    <PortfolioCard
+    title="E-Commerce-Backend"
+    body="A simple ecommerce backend utilizing SQL"
+    github="https://github.com/BihonAnon/E-Commerce-Back-End"
+    imagesrc="https://i.ibb.co/QQFjKv3/ECommerce-Backend.jpg"
+    href="https://github.com/BihonAnon/E-Commerce-Back-End"
   />
+  <PortfolioCard
+    title="DalTech Employee Register"
+    body="A employee tracker utilizing SQL"
+    github="https://github.com/BihonAnon/Daltech-Employee-Register"
+    imagesrc="https://i.ibb.co/XZrXPD1/Daltech-Employee-Register.jpg"
+    href="https://github.com/BihonAnon/Daltech-Employee-Register"
+  />
+  <PortfolioCard 
+    title="JiujitBits"
+    body="The backend for a social media account targeted at jiujitsu practioners im working on"
+    github="https://github.com/BihonAnon/JiujitBits"
+    imagesrc="https://i.ibb.co/3dRJg4z/Jiujitbits.jpg"
+    href="https://github.com/BihonAnon/JiujitBits"
+  />
+  <PortfolioCard
+  title="Brothers Homewood Mgmt."
+  body="A website for a local property management company"
+  github="https://github.com/BihonAnon/brothers-homewood-management"
+  imagesrc=""
+  href="https://bihonanon.github.io/brothers-homewood-management/"
+  />
+  <PortfolioCard 
+  title="Book Search"
+  body="A simple book search app utilizing google books api"
+  github="https://github.com/BihonAnon/BookSearchDeployment"
+  imagesrc="https://i.ibb.co/0hYJZ4V/Book-Search.jpg"
+  href="#under-construction"
+  />
+  <PortfolioCard 
+  title="Bloggable"
+  body="A simple reddit clone utilizing handlebars and SQL"
+  github="https://github.com/BihonAnon/Bloggable"
+  imagesrc="https://i.ibb.co/0hYJZ4V/Book-Search.jpg"
+  href="#under-construction"
+  />
+  <PortfolioCard
+  title="SQL Employee Tracker"
+  body="A simple employee tracker utilizing SQL"
+  github="https://github.com/BihonAnon/SQLEmployeeTracker"
+  imagesrc="https://i.ibb.co/0hYJZ4V/Book-Search.jpg"
+  href="#backend-software-has-no-deployment" />
+  </div>
 </Layout>

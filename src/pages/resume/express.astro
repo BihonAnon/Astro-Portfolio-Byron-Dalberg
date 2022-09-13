@@ -4,24 +4,26 @@ import ResumeFrontEnd from "../../components/ResumeFrontEnd.astro";
 import Skills from "../../components/Skills.astro";
 import Layout from "../../layouts/Layout.astro";
 ---
-<Layout title="Resume: TailwindCSS" />
+<Layout title="Resume: Express" />
 <container class="grid grid-cols-3 justify-items-center">
 <ResumeFrontEnd />
   <Skills 
-  focused= "jQuery"
+  focused= "Express"
   projects= {[
     {
-      name: "Astro Portfolio",
-      description: "A portfolio built on Astro, a new static site generator.",
+      name: "E-Commerce-Back-End",
+      description: "A Ecommerce backend built with express, sequelize, mysql",
       updated: "9-12-2022",
       href: "#tbd",
+      github: "https://github.com/BihonAnon/E-Commerce-Back-End/blob/main/package.json"
     },
     {
-      name: "Brothers Homewood Mgmt.",
-      description: "A E-Commerce site for a vermont busniess. Still in development.",
+      name: "Jujitbits",
+      description: "A Social Media backend built with express and mongooose",
       updated: "9-12-2022",
-      href: "https://bihonanon.github.io/brothers-homewood-management/",
-    }
+      href: "#tbd",
+      github: "https://github.com/BihonAnon/JiujitBits/blob/main/package.json"
+    },
   ]}
   />
   <ResumeBackEnd />
