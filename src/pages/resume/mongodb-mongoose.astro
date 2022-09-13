@@ -1,0 +1,30 @@
+---
+import ResumeBackEnd from "../../components/ResumeBackEnd.astro";
+import ResumeFrontEnd from "../../components/ResumeFrontEnd.astro";
+import Skills from "../../components/Skills.astro";
+import Layout from "../../layouts/Layout.astro";
+---
+<Layout title="Resume: TailwindCSS" />
+<container class="grid grid-cols-3 justify-items-center">
+<ResumeFrontEnd />
+  <Skills 
+  focused= "MongoDB - Mongoose"
+  projects= {[
+    {
+      name: "Jujitbits",
+      description: "A Social Media backend built with express and mongooose",
+      updated: "9-12-2022",
+      href: "#tbd",
+      github: "https://github.com/BihonAnon/JiujitBits/blob/main/package.json"
+    },
+  ]}
+  />
+  <ResumeBackEnd />
+</container>
+<style>
+    img {
+        width: 90px;
+        height: 18px;
+        object-fit: cover;
+    }
+</style>
